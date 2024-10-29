@@ -4,7 +4,7 @@ import java.io.Serializable;
 public class TimeTable implements Serializable {
     private List<Class> classes;
     private Map<String, List<TimeSlot>> teacherSchedule;
-    private static final String HOD = "Dr. John Doe"; // Replace with actual HOD name
+    private static final String HOD = "Dr. Mahadev Prasanna"; 
 
     public TimeTable() {
         classes = new ArrayList<>();
@@ -62,7 +62,7 @@ public class TimeTable implements Serializable {
 
     public void displayTimetable(String batchSection) {
         System.out.println("\n╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗");
-        System.out.println("║                                       Timetable for Section " + batchSection + "                                                    ║");
+        System.out.println(  "║                                       Timetable for Section " + batchSection + "                                          ║");
         System.out.println("╠═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╣");
         System.out.println("║   Time   │   Monday   │   Tuesday  │  Wednesday │  Thursday  │   Friday   ║");
         System.out.println("╠══════════╪════════════╪════════════╪════════════╪════════════╪════════════╣");
